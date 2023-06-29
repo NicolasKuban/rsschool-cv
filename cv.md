@@ -44,3 +44,20 @@
 	+ PyCharm
 
 
+## Пример кода:
+
+```
+def uglify(value):
+    relust = ""
+    for i in range(len(value)):
+        if i%2:
+            relust += value[i].upper()
+        else:
+            relust += value[i].lower()
+    return relust
+
+
+phrase = "Привет Мир!"
+print(uglify(phrase))
+```
+
