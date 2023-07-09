@@ -11,134 +11,170 @@
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <h1>rsschool-cv</h1>
-            <hr>
-            <h1>Николай Радионов</h1>
-            <hr>
+    <header>
+        <h1>rsschool-cv</h1>
+        <hr>
+        <h1>Николай Радионов</h1>
+        <hr>
+    </header>
+    <nav class="nav-inline">
+        <ul>
+            <li class=""><a href="#aboutme">О себе</a></li>
+            <li class=""><a href="#skills">Навыки</a></li>
+            <li class=""><a href="#code">Пример кода</a></li>
+            <li class=""><a href="#education">Образование</a></li>
+            <li class=""><a href="#experience">Опыт работы</a></li>
+            <li class=""><a href="#languages">Владение языками</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <aside>
+        <div>
+            <img class="aside-photo" src="photo.jpg" alt="photo">
         </div>
-        <div id="sidebar">
-            <div>
-                <img src="photo.jpg" alt="photo" width="100%">
-            </div>
+        <div itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name" hidden>Радионов Николай</span>
             <h2>Мои контакты:</h2>
-            <hr>
-            <div>
-                <div>
-                    <p>
-                        <strong>Адрес</strong> <em>ул.Советская, г.Лабинск, Краснодарский край, Россия</em>
-                    </p>
-                    <p>
-                        <strong>Телефон</strong>: <em>+7 (903) 465-62-81</em>
-                    </p>
-                    <p>
-                        <strong>e-mail</strong>: nicrad@inbox.ru
-                    </p>
-                    <p>
-                        <strong>GitHub</strong>: <a href="https://github.com/NicolasKuban/">NicolasKuban</a>
-                    </p>
-                    <p>
-                        <strong>Discord</strong>: NicolasKuban
-                    </p>
-                </div>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <strong>Адрес: </strong>
+                <span itemprop="streetAddress">Советская, 24</span>,
+                <span itemprop="addressLocality">Лабинск</span>,
+                <span itemprop="addressRegion">Краснодарский край</span>,
+                <span itemprop="addressCountry">Россия</span>,
+                <span itemprop="postalCode">352500</span>
             </div>
-        </div>
-        <div id="content">
-            <h2>О себе</h2>
-            <hr>
             <p>
-                В настоящее время изучаю Python, читаю книги, делаю различные задания. Для начала хочу создать приложение на фреймфорке Django для учета и изменения состояния технического оборудования для упрощения текущей работы и приобретения опыта. Для реализации этой задачи требуются основы веб-верстки и начальные знания JavaScript. Главная цель приносить пользу людям, освобождать больше их времени от рутины, чтобы можно было изучать что-то новое и интересное.
+                <strong>Телефон:</strong><span itemprop="telephone">+7 903 465 62 81</span>,
             </p>
-            <h2>Навыки</h2><hr>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Управление версиями:
-                    <ul>
-                        <li>
-                            Git (удаленный сервис GitHub)
-                        </li>
-                    </ul>
-                </li>
-                <li>Языки программирования
-                    <ul>
-                        <li>VBA (базовые знания)</li>
-                        <li>Python (базовые знания)
-                            <ul>
-                                <li>фреймворк Django (базовые знания)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>Базы данных:
-                    <ul>
-                        <li>SQL (базовые знания)</li>
-                        <li>SQLite (базовые знания)</li>
-                        <li>MS Access</li>
-                    </ul>
-                </li>
-                <li>
-                    Операционные системы:
-                    <ul>
-                        <li>Windows</li>
-                        <li>Linus
-                            <ul>
-                                <li>Ubuntu</li>
-                                <li>Debian</li>
-                                <li>Astra Linux</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>Редакторы:
-                    <ul>
-                        <li>VSCode</li>
-                        <li>PyCharm</li>
-                    </ul>
-                </li>
-            </ul>
-            <h2>Пример кода:</h2><hr>
-            <div>
+            <p>
+                <strong>Электронная почта:</strong><span itemprop="email">nicrad@inbox.ru</span>
+            </p>
+            <p>
+                <strong>GitHub</strong>: <span itemprop="url"><a href="https://github.com/NicolasKuban/">NicolasKuban</a></span>
+            </p>
+            <p>
+                <strong>Discord</strong>: NicolasKuban
+            </p>
+        </div>
+    </aside>
+    <main>
+        <h2 id="aboutme">
+            О себе
+        </h2><hr>
+        <p>
+            В настоящее время изучаю Python, читаю книги, делаю различные задания. Для начала хочу создать приложение на фреймфорке Django для учета и изменения состояния технического оборудования для упрощения текущей работы и приобретения опыта. Для реализации этой задачи требуются основы веб-верстки и начальные знания JavaScript. Главная цель приносить пользу людям, освобождать больше их времени от рутины, чтобы можно было изучать что-то новое и интересное.
+        </p>
+        <h2 id="skills">
+            Навыки
+        </h2><hr>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Управление версиями:
+                <ul>
+                    <li>
+                        Git (удаленный сервис GitHub)
+                    </li>
+                </ul>
+            </li>
+            <li>Языки программирования
+                <ul>
+                    <li>VBA (базовые знания)</li>
+                    <li>Python (базовые знания)
+                        <ul>
+                            <li>фреймворк Django (базовые знания)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Базы данных:
+                <ul>
+                    <li>SQL (базовые знания)</li>
+                    <li>SQLite (базовые знания)</li>
+                    <li>MS Access</li>
+                </ul>
+            </li>
+            <li>
+                Операционные системы:
+                <ul>
+                    <li>Windows</li>
+                    <li>Linus
+                        <ul>
+                            <li>Ubuntu</li>
+                            <li>Debian</li>
+                            <li>Astra Linux</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Редакторы:
+                <ul>
+                    <li>VSCode</li>
+                    <li>PyCharm</li>
+                </ul>
+            </li>
+        </ul>
+        <h2 id="code">
+            Пример кода:
+        </h2><hr>
+        <div>
             <pre>
-            <code>
-                def uglify(value):
-                    relust = ""
-                    for i in range(len(value)):
-                        if i%2:
-                            relust += value[i].upper()
-                        else:
-                            relust += value[i].lower()
-                    return relust
-                phrase = "Привет Мир!"
-                print(uglify(phrase))
-            </code>
+                <code>
+                    def uglify(value):
+                        relust = ""
+                        for i in range(len(value)):
+                            if i%2:
+                                relust += value[i].upper()
+                            else:
+                                relust += value[i].lower()
+                        return relust
+                    phrase = "Привет Мир!"
+                    print(uglify(phrase))
+                </code>
             </pre>
-            </div>
-            <h2>Образование</h2><hr>
-            <p>
-                Ставропольское Высшее Военное Инженерное Училище Связи
-            </p>
-            <p>
-                факультет радиосвязи
-            </p>
-            <p>
-                спецалиальность - инженер радиосвязи, радиовещания и телевидения
-            </p>
-            <h2>Опыт работы</h2><hr>
-            <p>
-                Несмотря, что программирование влекло меня со школьной скамьи, моя работа была далека от этой сферы.
-                Были небольшие проекты по оптимизации ведения учета, печати шаблонных документов в офисных пакетах на VBA и Python.
-            </p>
-            <h2>Родной язык</h2><hr>
-            <p>
-                русский
-            </p>
-            <h2>Иностранные языки</h2><hr>
-            <p>
-                Английский уровень А2
-            </p>
         </div>
-    </div>
+        <h2 id="education">
+            Образование
+        </h2><hr>
+        <p>
+            Ставропольское Высшее Военное Инженерное Училище Связи
+        </p>
+        <p>
+            факультет радиосвязи
+        </p>
+        <p>
+            спецалиальность - инженер радиосвязи, радиовещания и телевидения
+        </p>
+        <h2 id="experience">
+            Опыт работы
+        </h2><hr>
+        <p>
+            Несмотря, что программирование влекло меня со школьной скамьи, моя работа была далека от этой сферы.
+            Были небольшие проекты по оптимизации ведения учета, печати шаблонных документов в офисных пакетах на VBA и Python.
+        </p>
+        <h2>Родной язык</h2><hr>
+        <p>
+            русский
+        </p>
+        <h2 id="languages">
+            Иностранные языки
+        </h2><hr>
+        <p>
+            Английский уровень А2
+        </p>
+    </main>
+    <footer class="nav-inline">
+        <hr>
+        <ul>
+            <li class=""><span>© 2023 by Nikolay Radionov</span></li>
+            <li class="">
+                <a href="https://github.com/NicolasKuban/"><strong>GitHub</strong></a>
+            </li>
+            <li class="">
+                <img src="https://rs.school/images/rs_school_js.svg" height="30" alt="Логотип курса">&nbsp;
+                <a href="https://rs.school/js/">RSSchool</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
