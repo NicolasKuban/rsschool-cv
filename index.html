@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About my achievements">
+    <meta name="author" content="Nikolay Radionov">
+    <title>
+        My achievements
+    </title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nikolay Radionov</h1>
+        <hr>
+        <nav class="nav-inline">
+            <ul>
+                <li class=""><a href="#aboutme">About me</a></li>
+                <li class=""><a href="#skills">Skills</a></li>
+                <li class=""><a href="#code">Code example</a></li>
+                <li class=""><a href="#education">Education</a></li>
+                <li class=""><a href="#experience">Experience</a></li>
+                <li class=""><a href="#projects">Projects</a></li>
+                <li class=""><a href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <aside>
+        <div>
+            <img class="aside-photo" src="photo.jpg" alt="photo">
+        </div>
+        <div itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name" hidden>Nikolay Rodionov</span>
+            <h2>My contacts:</h2>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <strong>Address: </strong>
+                <span itemprop="streetAddress">Sovietskaia, 24</span>,
+                <span itemprop="addressLocality">Labinsk</span>,
+                <span itemprop="addressRegion">Krasnodarskiy kray</span>,
+                <span itemprop="addressCountry">Russia</span>,
+                <span itemprop="postalCode">352500</span>
+            </div>
+            <p>
+                <strong>Telephone:</strong><span itemprop="telephone">+7 903 465 62 81</span>,
+            </p>
+            <p>
+                <strong>Email:</strong><span itemprop="email">nicrad@inbox.ru</span>
+            </p>
+            <p>
+                <strong>GitHub</strong>: <span itemprop="url"><a href="https://github.com/NicolasKuban/">NicolasKuban</a></span>
+            </p>
+            <p>
+                <strong>Discord</strong>: NicolasKuban
+            </p>
+        </div>
+    </aside>
+    <main>
+        <h2 id="aboutme">
+            About me
+        </h2><hr>
+        <p>
+            Currently I am studying Python, reading books, doing various tasks. To begin with, I want to create an application on the Django framework for accounting and changing the state of technical equipment to simplify current work and gain experience. To implement this task, the basics of web layout and basic knowledge of JavaScript are required. The main goal is to benefit people, to free up more of their time from routine so that they can learn something new and interesting.
+        </p>
+        <h2 id="skills">
+            Skills
+        </h2><hr>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Version control:
+                <ul>
+                    <li>
+                        Git (remote service GitHub)
+                    </li>
+                </ul>
+            </li>
+            <li>Programming languages
+                <ul>
+                    <li>VBA (basic knowledge)</li>
+                    <li>Python (basic knowledge)
+                        <ul>
+                            <li>framework Django (basic knowledge)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Databases:
+                <ul>
+                    <li>SQL (basic knowledge)</li>
+                    <li>SQLite (basic knowledge)</li>
+                    <li>MS Access</li>
+                </ul>
+            </li>
+            <li>
+                Operating systems:
+                <ul>
+                    <li>Windows</li>
+                    <li>Linus
+                        <ul>
+                            <li>Ubuntu</li>
+                            <li>Debian</li>
+                            <li>Astra Linux</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Editors:
+                <ul>
+                    <li>VSCode</li>
+                    <li>PyCharm</li>
+                </ul>
+            </li>
+        </ul>
+        <h2 id="code">
+            Code example:
+        </h2><hr>
+        <div>
+            <pre>
+                <code>
+                    def uglify(value):
+                        relust = ""
+                        for i in range(len(value)):
+                            if i%2:
+                                relust += value[i].upper()
+                            else:
+                                relust += value[i].lower()
+                        return relust
+                    phrase = "Hwllo, World!"
+                    print(uglify(phrase))
+                </code>
+            </pre>
+        </div>
+        <h2 id="education">
+            Education
+        </h2><hr>
+        <p>
+            Stavropol Higher Military Engineering School of Communications
+        </p>
+        <p>
+            Faculty of Radio Communication
+        </p>
+        <p>
+            specialty - engineer of radio communications, radio broadcasting and television
+        </p>
+        <h2 id="experience">
+            Experience
+        </h2><hr>
+        <p>
+            Despite the fact that programming attracted me from school, my work was far from this area.
+            There were small projects to optimize accounting, printing template documents in office packages in VBA and Python.
+        </p>
+        <h2 id="projects">
+            My projects
+        </h2><hr>
+        <ul>
+            <li class=""><a href="https://nicolaskuban.github.io/rsschool-cv/cv">Markdown &amp; Git</a></li>
+            <li class=""><a href="https://nicolaskuban.github.io/rsschool-cv/">HTML, CSS &amp; Git Basics</a></li>
+            <li class=""><a href="https://github.com/NicolasKuban/Project_Python">Python</a></li>
+        </ul>
+        <h2 id="languages">
+            Languages
+        </h2><hr>
+        <p>
+            Native: Russian
+        </p>
+        <p>
+            Foreign: English A2
+        </p>
+
+    </main>
+    <footer class="nav-inline">
+        <hr>
+        <ul>
+            <li class=""><span>© 2023 by Nikolay Radionov</span></li>
+            <li class="">
+                <a href="https://github.com/NicolasKuban/"><strong>GitHub</strong></a>
+            </li>
+            <li class="">
+                <img src="https://rs.school/images/rs_school_js.svg" height="30" alt="Logo of curse">&nbsp;
+                <a href="https://rs.school/js/">RSSchool</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
