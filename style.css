@@ -1,0 +1,94 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  margin: auto;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #ECDAD6;
+  width: 1100px;
+}
+
+header {
+  display: block;
+  width: 90%;
+  margin: 0 auto 30px;
+  float: center;
+}
+
+nav {
+  display: block;
+  width: 90%;
+  margin: 0 auto 30px;
+  float: center;
+}
+
+aside {
+  display: block;
+  width: 320px;
+  margin: 0 auto 30px;
+  margin-left: 5%;
+  float: left;
+  padding: 10px;
+}
+
+main{
+  display: block;
+  width: 600px;
+  margin: 0 auto 30px;
+  margin-right: 5%;
+  float: right;
+  padding: 20px;
+}
+
+footer {
+  display: block;
+  width: 90%;
+  margin: 0 auto 30px;
+  float: center;
+  padding: 20px;
+  clear: both;
+}
+
+.aside-photo {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+}
+
+code {
+  font-size: 87.5%;
+  color: #e83e8c;
+  word-wrap: break-word;
+}
+
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: #212529;
+  background-color: #F5DEB3;
+}
+
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+
+.nav-inline li {
+  padding: 1em;
+  display: inline;
+}
+
